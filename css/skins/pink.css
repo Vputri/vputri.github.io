@@ -9,7 +9,8 @@
 }
 
 .aside .nav li a:hover,
-.aside .nav li a.active{
+.aside .nav li a.active,
+.portfolio .item-inner .item-info .tag a{
 	color:#ec1839;
 }
 

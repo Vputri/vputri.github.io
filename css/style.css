@@ -34,7 +34,7 @@ body{
 }
 
 .section .container{
-	padding-top: 60px;
+	padding-top: 40px;
 	padding-bottom: 70px;
 }
 
@@ -508,4 +508,99 @@ body{
 	font-weight:400;
 	margin:0;
 	line-height:25px;
+}
+
+/*Project*/
+.portfolio .container{
+	padding-bottom:40px;
+}
+
+.portfolio .item{
+	flex: 0 0 33.33%;
+	max-width: 33.33%;
+	margin-bottom: 30px;
+}
+
+.portfolio .item-inner{
+	border-radius: 10px;
+	overflow: hidden;
+	border:1px solid #d4d4e3;
+}
+
+.portfolio .item-inner .item-img img{
+	width: 100%;
+	display: :block;
+}
+
+.portfolio .item-inner .item-info{
+	padding:30px 15px;
+	background-color: #fdf9ff;
+}
+
+.portfolio .item-inner .item-info .judul{
+	font-size: 18px;
+	font-weight: 700;
+	color: #302e4d;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+}
+
+.portfolio .item-inner .item-info .deskripsi{
+	font-size: 16px;
+	line-height: 25px;
+	color:#504e70;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+.portfolio .item-inner .item-info .tag{
+	font-size: 14px;
+	line-height: 25px;
+	font-weight: 500;
+	text-transform: capitalize;
+	color:#504e70;
+}
+
+.portfolio .item-inner .item-info .tag a{
+	text-decoration: none;
+}
+
+/*Responsive*/
+@media (max-width: 1199px){
+	.aside{
+		left:-270px;
+	}
+
+	.main-content{
+		padding-left:0;
+	}
+
+	.about-content .personal-info .info-item p span{
+		display: block;
+		margin-left:0;
+	}
+}
+
+@media (max-width: 900px){
+	.portfolio .item{
+		-ms-flex:0 0 50%;
+		flex:0 0 50%;
+		max-width: 50%;
+	}
+}
+
+@media (max-width: 786px){
+	.portfolio .item,
+	.about-content .personal-info,
+	.about-content .skill,
+	.about-content .education,
+	.about-content .experience{
+		-ms-flex:0 0 100%;
+		flex:0 0 100%;
+		max-width: 100%;
+	}
+
+	.about-content .skill{
+		margin-top:60px;
+	}
 }

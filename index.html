@@ -4,9 +4,15 @@
 	<title>Vika's Portofolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/skins/pink.css">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.nav-toggler').click(function(){
+				$('.aside').toggleClass("slide-menu-tampil");
+			});
+		});
+	</script>
 </head>
 <body>
 	<!--Main Container-->
@@ -30,7 +36,7 @@
 				<li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
 				<li><a href="#about"><i class="fa fa-user"></i>About</a></li>
 				<li><a href="#education"><i class="fa fa-list"></i>Education</a></li>
-				<li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+				<li><a href="#portfolio"><i class="fa fa-briefcase"></i>Project</a></li>
 			</ul>
 			<!--Nav End-->
 
@@ -116,7 +122,7 @@
 
 									<div class="row">
 										<div class="button add">
-											<a href="file/cv.pdf" class="btn">Download CV</a>
+											<a href="file/CV_Vika Putri Ariyanti.pdf" class="btn">Download CV</a>
 										</div>
 									</div>
 								</div>
@@ -235,7 +241,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="section-title padd-15">
-							<h2>Portfolio</h2>
+							<h2>Project</h2>
 						</div>
 					</div>
 
@@ -282,6 +288,7 @@
 									<p class="tag">Tags:
 										<a href="#">HTML</a>,
 										<a href="#">CSS</a>
+									</p>
 								</div>
 							</div>
 						</div>
@@ -297,7 +304,8 @@
 									<p class="tag">Tags:
 										<a href="#">HTML</a>,
 										<a href="#">CSS</a>,
-										<a href="#">Django</a></p>
+										<a href="#">Python</a>
+									</p>
 								</div>
 							</div>
 						</div>
@@ -313,7 +321,8 @@
 									<p class="tag">Tags:
 										<a href="#">HTML</a>,
 										<a href="#">CSS</a>,
-										<a href="#">Django</a></p>
+										<a href="#">Python</a>
+									</p>
 								</div>
 							</div>
 						</div>

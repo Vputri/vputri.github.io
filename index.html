@@ -6,30 +6,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/skins/pink.css">
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$('.nav-toggler').click(function(){
-				$('.aside').toggleClass("slide-menu-tampil");
-			});
-		});
-	</script>
+	<style>
+		.mystyle{
+			left: 0px;
+		}
+	</style>
 </head>
 <body>
 	<!--Main Container-->
 	<div class="main-container">
 		<!--Aside-->
 		<div class="aside">
-			<!--Logo-->
-			<div class="logo">
-				<a href="#">VPUTRIA</a>
-			</div>
-			<!--Logo End-->
 
-			<!--Nav Toggle Button-->
-			<div class="nav-toggler">
-				<span></span>
+			<div class="atas">
+				<!--Nav Toggle Button-->
+				<div class="nav-toggler" id="coba" onclick="myFunc()">
+					<span></span>
+				</div>
+				<!--Nav Toggle Button End-->
+
+				<!--Logo-->
+				<div class="logo">
+					<a href="#">VPUTRIA</a>
+				</div>
+				<!--Logo End-->
 			</div>
-			<!--Nav Toggle Button End-->
+
+			
 
 			<!--Nav-->
 			<ul class="nav">
@@ -353,5 +356,11 @@
 		<!--main content end-->
 	</div>
 	<!--Main Container End-->
+	<script type="text/javascript">
+	let x = document.querySelector(".aside");
+	function myFunc() {
+		x.classList.toggle("mystyle")
+	}
+	</script>
 </body>
 </html>

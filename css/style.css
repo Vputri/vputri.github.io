@@ -34,7 +34,7 @@ body{
 }
 
 .section .container{
-	padding-top: 90px;
+	padding-top: 60px;
 	padding-bottom: 70px;
 }
 
@@ -380,6 +380,10 @@ body{
 	margin-top: 40px;
 }
 
+.margin{
+    margin-left:10px;
+}
+
 .about-content .skill .skill-item{
 	-ms-flex:0 0 100%;
 	flex:0 0 100%;
@@ -392,31 +396,7 @@ body{
 	font-size: 15px;
 	color:#302e4d;
 	text-transform: capitalize;
-	margin:0;
-}
-
-.about-content .skill .skill-item .progress{
-	background-color: #e3e3e3;
-	height: 8px;
-	border-radius: 4px;
-	width: 90%;
-	position: relative;
-}
-
-.about-content .skill .skill-item .progress .progress-in{
-	position: absolute;
-	left:0;
-	top:0;
-	height:100%;
-}
-
-.about-content .skill .skill-item .skill-persent{
-	line-height: 40px;
-	position: absolute;
-	font-size: 15px;
-	right: 0;
-	top:-35px;
-	font-weight: 400;
+	line-height:2;
 }
 
 .about-content .education{

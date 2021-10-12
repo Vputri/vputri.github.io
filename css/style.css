@@ -6,6 +6,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;900&display=swap');
 
 /*general*/
+.mystyle{
+	left: 0px;
+}
+
 body{
 	margin:0;
 	line-height:1.5;
@@ -43,12 +47,12 @@ body{
 	flex:0 0 100%;
 	max-width:100%;
 	margin-bottom:60px;
+
 }
 
 .section-title h2{
 	font-size: 40px;
 	color:#302e4d;
-	font-family: 'Rubik', sans-serif;
 	font-weight:700;
 	margin:0;
 	position: relative;
@@ -104,10 +108,6 @@ body{
 .btn:hover{
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
-}
-
-.hidden{
-	left:0!important;
 }
 
 .row{
@@ -290,14 +290,15 @@ body{
 	margin-top: 25px;
 }
 
+
 .home .intro .social-link a{
+	padding-top: 10px;
 	height: 35px;
 	width: 35px;
 	display: inline-block;
 	text-align: center;
 	line-height: 35px;
 	color:#fff;
-	margin: 0 4px;
 	border-radius:50%;
 	text-decoration: none;
 	-webkit-transition: all 0.3s ease;
@@ -310,7 +311,7 @@ body{
 }
 
 /*About-section*/
-.about-content{
+.about-content, .content{
 	-ms-flex:0 0 100%;
 	flex:0 0 100%;
 	max-width: 100%;
@@ -320,7 +321,7 @@ body{
 	padding-left: 15px;
 }
 
-.about-content .about-text{
+.about-content .about-text, .isi-detail{
 	-ms-flex:0 0 100%;
 	flex:0 0 100%;
 	max-width: 100%;
@@ -341,16 +342,16 @@ body{
 }
 
 .about-content .personal-info{
-	-ms-flex:0 0 60%;
-	flex:0 0 60%;
-	max-width: 60%;
+	-ms-flex:0 0 50%;
+	flex:0 0 50%;
+	max-width: 50%;
 	margin-top: 40px;
 }
 
 .about-content .personal-info .info-item{
-	-ms-flex:0 0 50%;
-	flex:0 0 50%;
-	max-width: 50%
+	-ms-flex:0 0 100%;
+	flex:0 0 100%;
+	max-width: 100%
 }
 
 .about-content .personal-info .info-item p{
@@ -374,10 +375,10 @@ body{
 
 
 .about-content .skill{
-	-ms-flex:0 0 40%;
-	flex:0 0 40%;
-	max-width: 40%;
-	margin-top: 40px;
+	-ms-flex:0 0 50%;
+	flex:0 0 50%;
+	max-width: 50%;
+	margin-top: 50px;
 }
 
 .margin{
@@ -385,9 +386,9 @@ body{
 }
 
 .about-content .skill .skill-item{
-	-ms-flex:0 0 100%;
-	flex:0 0 100%;
-	max-width: 100%;
+	-ms-flex:0 0 50%;
+	flex:0 0 50%;
+	max-width: 50%;
 	margin-bottom: 20px;
 }
 
@@ -546,6 +547,13 @@ body{
 	left:270px;
 }
 
+.form-control{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
 
 /*Responsive*/
 @media (max-width: 1199px){

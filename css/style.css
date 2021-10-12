@@ -173,6 +173,7 @@ body{
 }
 
 .aside .nav-toggler{
+	padding-top:-10px;
 	height:40px;
 	width:45px;
 	border:1px solid #d4d4e3;
